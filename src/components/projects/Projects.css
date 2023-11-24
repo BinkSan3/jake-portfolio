@@ -1,0 +1,12 @@
+.projects {
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+}
+
+.project-container {
+  width: 70%;
+  height: 50vb;
+  border: solid white 2px;
+  margin: 10%;
+  border-radius: 15px;
+}
