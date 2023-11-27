@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
@@ -15,7 +16,11 @@ function App() {
         <img src={cbr} alt="Curly right bracket" />
       </div>
       <About />
-      <Projects />
+
+      <section className="projects-section">
+        <Projects />
+      </section>
+
       <Contact />
     </div>
   );
