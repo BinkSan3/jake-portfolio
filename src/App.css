@@ -1,3 +1,72 @@
 .App {
   background-color: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  color: white;
+  height: 50vh;
+  font-size: 200px;
+  font-family: monospace;
+  text-align: center;
+}
+
+.brackets {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: sticky;
+  top: 0%;
+}
+
+.inbetween-bracket {
+  color: azure;
+}
+
+.animateBracket {
+  animation-name: animate-bracket;
+  animation-duration: 10s;
+}
+
+@keyframes animate-bracket {
+  from {
+    width: 0%;
+    background-color: bisque;
+  }
+  to {
+    width: 100%;
+    background-color: aqua;
+  }
+}
+
+.inbetween-transition {
+  width: 100%;
+  transition: width 3s ease-in-out;
+}
+
+.transition-lb {
+  transition-duration: 3s;
+  transition-property: all;
+}
+
+.transition-lb:left {
+  transform: translateX(300px);
+}
+
+.animate-lb {
+  animation-name: animate-bracket;
+  animation-duration: 5s;
+}
+
+@keyframes animate-bracket {
+  from {
+    width: 0%;
+    background-color: bisque;
+  }
+  to {
+    width: 100%;
+    background-color: aqua;
+  }
 }

@@ -5,11 +5,7 @@ import { useRef } from "react";
 
 const Projects = () => {
   return (
-    <motion.div
-      className="projects-container"
-      drag="x"
-      dragConstraints={{ left: -1000, right: 0 }}
-    >
+    <div className="projects-container">
       <div className="project-item" id="project1"></div>
       <div className="project-item" id="project2"></div>
       <div className="project-item" id="project3"></div>
@@ -17,7 +13,7 @@ const Projects = () => {
       <div className="project-item" id="project5"></div>
       <div className="project-item" id="project6"></div>
       <div className="project-item" id="project7"></div>
-    </motion.div>
+    </div>
   );
 };
 
