@@ -7,9 +7,15 @@
 
 .project-item {
   background-color: rgb(201, 26, 26);
-  width: 70%;
+  width: 66vw;
   height: 70vh;
   border: solid white 2px;
   margin: 10%;
   border-radius: 15px;
+}
+
+.projects-title {
+  font-family: var(--font-serifalt);
+  font-weight: 100;
+  font-size: 2000%;
 }

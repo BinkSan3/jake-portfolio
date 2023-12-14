@@ -1,0 +1,11 @@
+.about-container {
+  width: 66vw;
+  height: 70vh;
+  margin: 10%;
+  color: beige;
+}
+
+.about-title {
+  font-size: 250%;
+  font-family: var(--font-mono);
+}

@@ -20,7 +20,8 @@ function App() {
   // useEffect(() => {
   //   const observer = new IntersectionObserver((entries) => {
   //     const entry = entries[0];
-  //     setVisibleComponents(entry.isIntersecting);
+  //     setVisibleComponents(entry.intersectionRatio);
+  //     // console.log(entry);
   //   });
   //   observer.observe(myRef.current);
   // }, []);
@@ -30,22 +31,26 @@ function App() {
       <Header />
       <h1 className="name">Jake Meyer</h1>
       <div className="brackets">
-        <img src={cbl} alt="Curly left bracket" />
+        <img
+          src={cbl}
+          alt="Curly left bracket"
+          className={visibleComponents ? "transition-rb" : "transitionBack-rb"}
+        />
         <div
-          className={visibleComponents ? "inbetween-transition" : ""}
-          // style={visibleComponents ? { width: "100%" } : { width: "10%" }}
+        // className={visibleComponents ? "inbetween-transition" : ""}
+        // style={visibleComponents ? { width: "100%" } : { width: "10%" }}
         ></div>
 
         <img
           src={cbr}
           alt="Curly right bracket"
-          className={visibleComponents ? "transition-lb" : ""}
+          className={visibleComponents ? "transition-lb" : "transitionBack-lb"}
         />
       </div>
       <section className="bracket-section" ref={myRef}>
-        <About />
+        <About visibleComponents={visibleComponents} />
 
-        <Projects />
+        <Projects visibleComponents={visibleComponents} />
       </section>
 
       <Contact />
